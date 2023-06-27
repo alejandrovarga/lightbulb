@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>click on Buttom to make the light flash</title>
+  <style>
+    .lightbulb {
+      width: 100px;
+      height: 100px;
+      background-color: gray;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    .on {
+      background-color: yellow;
+    }
+    .off {
+      background-color: gray;
+    }
+  </style>
+</head>
+<body>
+  <h1>Toggle the lightbulb</h1>
+  <div class="lightbulb off"></div>
+  <button onclick="toggleLightbulb()">Toggle Light</button>
+
+  <script>
+    function toggleLightbulb() {
+      var lightbulb = document.querySelector('.lightbulb');
+      lightbulb.classList.toggle('on');
+      lightbulb.classList.toggle('off');
+    }
+  </script>
+</body>
+</html>
